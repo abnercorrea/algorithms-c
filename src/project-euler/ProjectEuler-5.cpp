@@ -5,10 +5,14 @@
 #include <cmath>
 #include <iostream>
 #include <map>
-#include <vector>
 
 using namespace std;
 
+/**
+ * key = prime, value = exponent
+ * @param n
+ * @return
+ */
 map<int, int> generatePrimeFactors(long n) {
     map<int, int> factors;
     long prime = 1, sqrtN = sqrt(n);
@@ -36,10 +40,10 @@ long smallestMultiple(long n) {
         if (m % divisor != 0) {
             map<int, int> divisorFactors = generatePrimeFactors(divisor);
 
-            for (map<int, int>::iterator itr = divisorFactors.begin(); itr != divisorFactors.end(); ++itr) {
-                if (itr->second > primeFactors[itr->first]) {
-                    m *= pow(itr->first, itr->second - primeFactors[itr->first]);
-                    primeFactors[itr->first] = itr->second;
+            for (auto & divisorFactor: divisorFactors) {
+                if (divisorFactor.second > primeFactors[divisorFactor.first]) {
+                    m *= pow(divisorFactor.first, divisorFactor.second - primeFactors[divisorFactor.first]);
+                    primeFactors[divisorFactor.first] = divisorFactor.second;
                 }
             }
         }
