@@ -12,7 +12,7 @@ using namespace std;
 
 /**
  * Number of NE lattice paths on a x by y lattice starting at (0,0) and ending at (x,y)
- * The number of NE (north, east) lattice paths is the binomial (n+k  n)
+ * The number of NE (north, east) lattice paths is the binomial (n+k  n), 0 < k < n
  * (n+k  n) = (n + k)! / (n! * k!)
  *
  * https://en.wikipedia.org/wiki/Lattice_path
