@@ -26,6 +26,7 @@ ullint numberOfNELatticePaths(int x, int y) {
     long double numPaths = 1;
     int n = max(x, y), k = min(x, y);
     // Good way to calculate (n + k)! / (n! * k!), without actually computing (n + k)! -> overflows...
+    // Divides first then multiplies. This prevents overflow during the calculation.
     for (int i = 2; i <= k; i++) numPaths /= i;
     for (int i = n + 1; i <= n + k; i++) numPaths *= i;
     return round(numPaths);
