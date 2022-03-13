@@ -1,3 +1,8 @@
+// Given an array of integers, where all elements but one occur twice, find the unique element.
+// Solution:
+// XOR is:
+// 1. associative -> (a ^ b) ^ c = a ^ (b ^ c)
+// 2. commutative -> a ^ b = b ^ a
 #include <vector>
 #include <iostream>
 #include <algorithm>

@@ -19,10 +19,10 @@ long largestPrimeFactor(long n) {
         prime += 2;
         if (prime > sqrtN) prime = n;
         if (n % prime == 0) {
-            do {
+             do {
                 n /= prime;
             }
-            while (n % prime == 0);
+           while (n % prime == 0);
 
             sqrtN = sqrt(n);
         }

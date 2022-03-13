@@ -16,7 +16,8 @@ vector<int> jimOrders(vector<vector<int>> orders) {
         orders.end( ),
         // Lambda!
         [ ]( const vector<int> order1, const vector<int> order2) {
-            int diff = order1[0] + order1[1] - order2[0] - order2[1];                                if (diff == 0) {
+            int diff = order1[0] + order1[1] - order2[0] - order2[1];
+            if (diff == 0) {
                return order1[2] < order2[2]; 
             }
             else {

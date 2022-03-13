@@ -2,7 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
-#include "../util/timeit.h"
+// #include "../util/timeit.h"
 
 using namespace std;
 
@@ -40,7 +40,7 @@ int main(){
 //    for(int a0 = 0; a0 < t; a0++) cin >> ns[a0];
     vector<long> ns{0, 1, 2, 3, 7, 10, 11, 100, 101, 102, 1000, 10000, 100000, 1000000};
 
-    cout << "Time taken: " << timeIt(sumOfPrimes, ns) << "ms" << endl;
+    // cout << "Time taken: " << timeIt(sumOfPrimes, ns) << "ms" << endl;
 
     map<long, long> sums = sumOfPrimes(ns);
     for(long n: ns) cout << sums[n] << endl;

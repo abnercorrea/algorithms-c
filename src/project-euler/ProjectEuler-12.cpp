@@ -2,7 +2,7 @@
 #include <cmath>
 #include <iostream>
 #include <map>
-#include "../util/timeit.h"
+//#include "../util/timeit.h"
 
 using namespace std;
 
@@ -110,11 +110,11 @@ int main() {
     cout << "Max N: " << maxN << endl;
 
     long n = 15000;
-    cout << "Time taken DP: " << timeIt(highlyDivisibleTriangularNumberDP, n) << "ms" << endl;
-    cout << "Time taken: " << timeIt(highlyDivisibleTriangularNumber, n) << "ms" << endl;
+    // cout << "Time taken DP: " << timeIt(highlyDivisibleTriangularNumberDP, n) << "ms" << endl;
+    // cout << "Time taken: " << timeIt(highlyDivisibleTriangularNumber, n) << "ms" << endl;
 
-    // cout << highlyDivisibleTriangularNumber(1000) << endl;
-    // cout << highlyDivisibleTriangularNumberDebug(10000) << endl;
+    cout << highlyDivisibleTriangularNumberDP(n) << endl;
+    cout << highlyDivisibleTriangularNumber(n) << endl;
 
     return 0;
 }

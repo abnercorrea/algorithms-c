@@ -5,7 +5,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
-#include "../util/timeit.h"
+//#include "../util/timeit.h"
 
 using namespace std;
 
@@ -108,12 +108,12 @@ int main() {
 
     for (ullint i = 0; i < t; i++) numbers[t - i - 1] = MEMOIZE_CAPACITY - i - 1;
 
-    cout << "Time taken I: " << timeIt(longestCollatzSequence, numbers) << "ms" << endl;
+    //cout << "Time taken I: " << timeIt(longestCollatzSequence, numbers) << "ms" << endl;
     //cout << "Time taken R: " << timeIt(longestCollatzSequenceR, numbers) << "ms" << endl;
 
-    // map<ullint, ullint> result = longestCollatzSequence(numbers);
+    map<ullint, ullint> result = longestCollatzSequence(numbers);
 
-    // for (ullint & number : numbers) cout << result[number] << endl;
+    for (ullint & number : numbers) cout << result[number] << endl;
 
     return 0;
 }
