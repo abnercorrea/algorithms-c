@@ -18,6 +18,9 @@ add_executable(binary_tree
 add_executable(power_sum
         src/hackerrank/algorithms/recursion/medium/PowerSum.cpp)
 
+add_executable(equal
+        src/hackerrank/algorithms/implementation/medium/Equal.cpp)
+
 # GMP (Big number support)
 # pkg-config --cflags gmp
 include_directories(/usr/local/Cellar/gmp/6.2.1_1/include)

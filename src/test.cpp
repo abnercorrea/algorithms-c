@@ -106,8 +106,6 @@ int main() {
             [](const int i) { return i * i; }
             );
 
-    c;
-
     for (const int i: c) cout << i << "\n";
 
     cout << "c[1] = " << *(c + 1) << "\n";
