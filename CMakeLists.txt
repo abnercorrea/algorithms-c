@@ -18,8 +18,8 @@ add_executable(binary_tree
 add_executable(power_sum
         src/hackerrank/algorithms/recursion/medium/PowerSum.cpp)
 
-add_executable(equal
-        src/hackerrank/algorithms/implementation/medium/Equal.cpp)
+add_executable(leetcode
+        src/leetcode/linkedin/20-ValidParentheses.cpp)
 
 # GMP (Big number support)
 # pkg-config --cflags gmp
